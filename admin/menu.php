@@ -36,6 +36,7 @@ $admin_avatar = !empty($admin['avatar']) ? $admin['avatar'] : 'https://ui-avatar
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Restaurant Admin</title>
   <link rel="stylesheet" href="../css/admin.css">
+  <link rel="icon" href="https://media.istockphoto.com/id/2203688325/video/chef-in-cook-hat-and-baker-cook-fork-spoon-and-leaves-graphic-animation-colored-transparent.avif?s=640x640&k=20&c=SsywiUO3TYpYcoz1gez4GV3FpcnU3ibH9pbDD8wgBvI=" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 

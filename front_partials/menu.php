@@ -10,6 +10,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MOCK-FOOD | Delicious Food</title>
+        <link rel="icon" href="https://media.istockphoto.com/id/2203688325/video/chef-in-cook-hat-and-baker-cook-fork-spoon-and-leaves-graphic-animation-colored-transparent.avif?s=640x640&k=20&c=SsywiUO3TYpYcoz1gez4GV3FpcnU3ibH9pbDD8wgBvI=" type="image/x-icon">
         <link rel="stylesheet" href="../css/style.css">
     </head>
 
