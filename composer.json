@@ -1,0 +1,17 @@
+{
+    "name": "techwards/mock-food",
+    "autoload": {
+        "psr-4": {
+            "Techwards\\MockFood\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muhammad Uzair",
+            "email": "muhammad.druzair@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

@@ -1,21 +1,21 @@
-    <?php
+<?php
+require __DIR__ . '/../vendor/autoload.php'; // Fixed path
 
+define("SITEURL", "http://localhost/mock-food/admin");
+define("FRONT_SITEURL", "http://localhost/mock-food");
 
-    define("SITEURL", "http://localhost/mock-food/admin");
-    define("FRONT_SITEURL", "http://localhost/mock-food");
-    define("LOCALHOST", "localhost");
-    define("DB_USERNAME", "root");
-    define("DB_PASSWORD", "");
-    define("DB_NAME", "mock-food");
+// Load .env from project root (not config folder)
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv->load();
 
+$conn = new mysqli(
+    $_ENV['DB_HOST'],
+    $_ENV['DB_USER'],
+    $_ENV['DB_PASS'],
+    $_ENV['DB_NAME']
+);
 
-    $conn = new mysqli(LOCALHOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
-
-    if ($conn->connect_error) {
-        die("❌ Connection failed: " . $conn->connect_error . "<br>");
-    } else {
-        // echo "✅ Connected successfully<br>";
-    }
-
-    ?>
-    </div>
+if ($conn->connect_error) {
+    die("❌ Connection failed: " . $conn->connect_error);
+}
+?>
